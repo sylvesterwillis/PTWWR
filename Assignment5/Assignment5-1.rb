@@ -6,6 +6,6 @@ url = URI('http://ruby-metaprogramming.rubylearning.com/html/ruby_metaprogrammin
 
 source = Net::HTTP.get(url)
 
-source.to_s.scan(/[ ]*[Tt]he /).count
+printf("'the' occurs %d times.\n", source.to_s.scan(/[ ]*[Tt]he /).count)
 
 
